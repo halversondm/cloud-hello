@@ -26,6 +26,11 @@
 				<artifactId>cloud-hello-rest</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
+			<dependency>
+				<groupId>com.halversondm</groupId>
+				<artifactId>cloud-hello-web</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

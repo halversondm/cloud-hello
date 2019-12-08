@@ -16,6 +16,8 @@
 	<modules>
 		<module>cloud-hello-parent</module>
 		<module>cloud-hello-rest</module>
+		<module>cloud-hello-web</module>
+		<module>cloud-hello-boot</module>
 	</modules>
 
 </project>
