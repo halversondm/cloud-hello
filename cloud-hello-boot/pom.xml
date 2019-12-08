@@ -14,6 +14,9 @@
 
 	<properties>
 		<java.version>8</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source> <!-- REQUIRED -->
+		<maven.compiler.target>${java.version}</maven.compiler.target> <!-- REQUIRED -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
