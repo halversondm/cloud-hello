@@ -1,62 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">  
-  <modelVersion>4.0.0</modelVersion>  
-  <parent> 
-    <groupId>com.halversondm</groupId>  
-    <artifactId>cloud-hello-parent</artifactId>  
-    <version>0.0.1-SNAPSHOT</version>  
-    <relativePath>../cloud-hello-parent</relativePath> 
-  </parent>  
-  <artifactId>cloud-hello-boot</artifactId>  
-  <name>cloud-hello-boot</name>  
-  <description>cloud-hello-boot</description>  
-  <properties> 
-    <maven.compiler.source>${java.version}</maven.compiler.source>  
-    <!-- REQUIRED -->  
-    <maven.compiler.target>${java.version}</maven.compiler.target>  
-    <!-- REQUIRED -->  
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-  </properties>  
-  <dependencies> 
-    <dependency> 
-      <groupId>com.halversondm</groupId>  
-      <artifactId>cloud-hello-rest</artifactId> 
-    </dependency>  
-    <dependency> 
-      <groupId>com.halversondm</groupId>  
-      <artifactId>cloud-hello-web</artifactId> 
-    </dependency> 
-  </dependencies>  
-  <build> 
-    <plugins> 
-      <plugin> 
-        <groupId>org.springframework.boot</groupId>  
-        <artifactId>spring-boot-maven-plugin</artifactId>  
-        <configuration> 
-          <mainClass>com.halversondm.hello.CloudHelloApplication</mainClass> 
-        </configuration>  
-        <executions> 
-          <execution> 
-            <goals> 
-              <goal>repackage</goal> 
-            </goals> 
-          </execution> 
-        </executions> 
-      </plugin>  
-      <plugin> 
-        <groupId>com.google.cloud.tools</groupId>  
-        <artifactId>appengine-maven-plugin</artifactId>  
-        <version>2.2.0</version>  
-        <configuration> 
-          <version>1</version>  
-          <projectId>GCLOUD_CONFIG</projectId> 
-        </configuration> 
-      </plugin>  
-      <plugin> 
-        <groupId>com.microsoft.azure</groupId>  
-        <artifactId>azure-webapp-maven-plugin</artifactId>  
-        <version>1.8.0</version>  
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.halversondm</groupId>
+    <artifactId>cloud-hello-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../cloud-hello-parent</relativePath>
+  </parent>
+  <artifactId>cloud-hello-boot</artifactId>
+  <name>cloud-hello-boot</name>
+  <description>cloud-hello-boot</description>
+  <properties>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <!-- REQUIRED -->
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <!-- REQUIRED -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.halversondm</groupId>
+      <artifactId>cloud-hello-rest</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.halversondm</groupId>
+      <artifactId>cloud-hello-web</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>com.halversondm.hello.CloudHelloApplication</mainClass>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>appengine-maven-plugin</artifactId>
+        <version>2.2.0</version>
+        <configuration>
+          <version>1</version>
+          <projectId>GCLOUD_CONFIG</projectId>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.microsoft.azure</groupId>
+        <artifactId>azure-webapp-maven-plugin</artifactId>
+        <version>1.8.0</version>
         <configuration>
           <schemaVersion>V2</schemaVersion>
           <resourceGroup>cloud-hello-boot-1576027073836-rg</resourceGroup>
@@ -65,8 +66,8 @@
           <region>westeurope</region>
           <runtime>
             <os>linux</os>
-            <javaVersion>java11</javaVersion>
-            <webContainer>java11</webContainer>
+            <javaVersion>java17</javaVersion>
+            <webContainer>java17</webContainer>
           </runtime>
           <deployment>
             <resources>
@@ -79,7 +80,7 @@
             </resources>
           </deployment>
         </configuration>
-      </plugin> 
-    </plugins> 
-  </build> 
+      </plugin>
+    </plugins>
+  </build>
 </project>

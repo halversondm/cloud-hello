@@ -11,8 +11,8 @@
     <groupId>com.halversondm</groupId>
     <artifactId>cloud-hello-rest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-hello</name>
-    <description>cloud-hello</description>
+    <name>cloud-hello-rest</name>
+    <description>cloud-hello-rest</description>
 
     <dependencies>
         <dependency>
