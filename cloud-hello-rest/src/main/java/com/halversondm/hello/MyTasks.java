@@ -22,4 +22,5 @@ public class MyTasks {
     public void printHello() {
         LOGGER.info("Hello!");
     }
+
 }
