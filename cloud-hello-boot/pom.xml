@@ -64,8 +64,8 @@
                     <region>westeurope</region>
                     <runtime>
                         <os>linux</os>
-                        <javaVersion>java17</javaVersion>
-                        <webContainer>java17</webContainer>
+                        <javaVersion>java21</javaVersion>
+                        <webContainer>java21</webContainer>
                     </runtime>
                     <deployment>
                         <resources>

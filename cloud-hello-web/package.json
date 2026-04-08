@@ -7,35 +7,18 @@
     "@testing-library/react": "*",
     "@testing-library/user-event": "*",
     "react": "*",
-    "react-dom": "*",
-    "react-scripts": "*"
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "*",
+    "jsdom": "*",
+    "vite": "*",
+    "vitest": "*"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "overrides": {
-    "nth-check": "^2.1.1",
-    "serialize-javascript": "^7.0.5",
-    "underscore": "^1.13.8",
-    "webpack-dev-server": "^5.2.3",
-    "postcss": "^8.4.31"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
   }
 }
